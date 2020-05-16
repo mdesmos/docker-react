@@ -1,8 +1,8 @@
 version: '3'
 services: 
     web:
-        stdin_open: true
-        tty: true
+        #stdin_open: true
+        #tty: true
         build: 
             context: .
             dockerfile: Dockerfile.dev
@@ -12,8 +12,8 @@ services:
             - /app/node_modules
             - .:/app
     tests:
-        stdin_open: true
-        tty: true
+        #stdin_open: true
+        #tty: true
         build: 
             context: .
             dockerfile: Dockerfile.dev
